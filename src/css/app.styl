@@ -1,0 +1,52 @@
+@require 'colors'
+@require 'fonts'
+
+.card
+  font-family: 'Press Start', sans-serif
+  width 400px
+  color: var(--postcard-text-color)
+.error-block
+  margin-top 10px
+  padding 10px
+  border-radius 5px
+  background-color var(--postcard-error-bg)
+  &__text
+    font-size 11px
+    font-weight bold
+.notify-class
+  font-family: 'Press Start', sans-serif
+  padding 10px
+  font-weight bold
+.modal
+  font-family: 'Amatic', sans-serif
+  &-text
+    font-size 25px
+.song-btn
+  animation-iteration-count infinite
+  animation-duration 800ms
+  animation-direction alternate-reverse
+  animation-name songin
+
+.flowers
+  margin-top 40px
+  display flex
+  align-items center
+  width 100%
+  &-img
+    border-radius 10px
+    transform rotate(10deg) translateX(-200px)
+  &-text
+    font-family 'Press Start', sans-serif
+    font-size 16px
+    line-height 25px
+    margin-left 20px
+    transform rotate(10deg) translateX(-350px)
+  &-active
+    transform rotate(10deg) translateX(0px)
+    transition 2s
+
+@keyframes songin
+  from
+    transform scale(1)
+  to
+    transform scale(1.2)
